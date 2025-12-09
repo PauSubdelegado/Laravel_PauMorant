@@ -6,5 +6,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/posts', function () {
-    return "Listado de posts";
+    return "Listado de posts"; //SESION 1 COMPLETADA
 });
