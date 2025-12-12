@@ -1,4 +1,4 @@
-@section('titulo','Listado Post')
+@extends('plantilla')
 
 @section('contenido')
 <h1>Listado de post</h1>
