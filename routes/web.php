@@ -14,4 +14,6 @@ Route::get('/posts/{id}', function ($id) {
     return view('posts.ficha', ['id' => $id]);
 })->where("id", "[0-9]+")->name("posts_ficha"); // Sesion 2 ACT 1 COMPLETADA
 
+use App\Http\Controllers\PostController;
 
+Route::resource('algo', PostController::class)->only(['index', 'show', 'create', 'edit']);
