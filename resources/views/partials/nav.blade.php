@@ -1,5 +1,17 @@
-<nav>
-    <a href="{{ route(name: 'inicio') }}">Inicio</a>
-    &nbsp;&nbsp;
-    <a href="{{ route(name: 'posts_listado') }}">Listado de fichas</a>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Laravel Pau</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ route(name: 'inicio') }}">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route(name: 'posts_listado') }}">Listado de fichas</a>
+      </li>
+  </div>
 </nav>
